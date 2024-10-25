@@ -1,0 +1,41 @@
+{
+  "name": "PubMakert",
+  "version": "1.0.0",
+  "description": "PubMarket",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "server": "nodemon src/server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "render-postbuild": "NPM_CONFIG_PRODUCTION=false && npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "author": "Fullstack developer",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.6.0",
+    "axios": "^1.4.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.1",
+    "cloudinary": "^1.28.1",
+    "concurrently": "^7.6.0",
+    "cookie-parser": "^1.4.6",
+    "crypto": "^1.0.1",
+    "dotenv": "^14.2.0",
+    "execp": "^0.0.1",
+    "express": "^4.17.2",
+    "express-fileupload": "^1.2.1",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.7",
+    "nodemailer": "^6.7.2",
+    "nodemon": "^2.0.22",
+    "path": "^0.12.7",
+    "paytmchecksum": "^1.5.0",
+    "request": "^2.88.2",
+    "sqlite3": "^5.1.6",
+    "stripe": "^8.200.0",
+    "uuid": "^8.3.2",
+    "validator": "^13.7.0"
+  }
+}

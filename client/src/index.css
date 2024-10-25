@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #f1f3f6;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* hover navbar dropdown arrow */
+.arrow_down {
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-bottom: 11px solid #fff;
+}
+/* hover navbar dropdown arrow */
+
+/* login signup sidebar bg image */
+.loginSidebar {
+    background-image: url("https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/login_img_c4a81e.png");
+    background-position: center 85%;
+    background-repeat: no-repeat;
+}
+/* login signup sidebar bg image */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: InterFont;
+  src: url(./assets/fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: InterBold;
+  src: url(./assets/fonts/Inter-Bold.ttf);
+}
+
+body {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch
+}
+
+#root {
+  width: 100%;
+  min-height: 100%;
+  background-color: #091512 ;
+  font-family: InterFont;
+}
+
+.inter-bold-font {
+  font-family: InterBold;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+@media only screen and (min-width: 560px) {
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+}
+
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
